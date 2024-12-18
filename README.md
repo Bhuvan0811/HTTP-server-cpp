@@ -23,10 +23,10 @@ The main goal is to manually manage HTTP requests and responses, offering a bett
 To compile the server and client programs, you can use the following commands:
 
 
-# For server
+### For server
 g++ -std=c++11 -o http_server server.cpp -lws2_32
 
-# For client
+### For client
 g++ -std=c++11 -o http_client client.cpp -lws2_32
 
 ## Running the Application:
@@ -41,7 +41,6 @@ The server needs to be running before starting the client. The client will send 
 ## Future Work
 -Implement actual functionality for POST, PUT, and DELETE HTTP methods.
 -Handle multiple client requests concurrently using better threading techniques.
------------------------------------------------------------------------------------------
 
 This project was created for educational purposes to demonstrate basic HTTP, socket programming, and client-server communication. By directly interacting with these protocols, one can better understand how modern web frameworks build on these foundations.
 
