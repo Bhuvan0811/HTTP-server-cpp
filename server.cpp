@@ -7,7 +7,7 @@
 #include <fstream>
 #include <pthread.h>
 using namespace std;
-
+// thread function is of signature void*(*)(void*)
 void* readFile(void* URL){
     string path = *static_cast<string*>(URL);
     ifstream f(path);

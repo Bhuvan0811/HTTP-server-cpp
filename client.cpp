@@ -32,7 +32,7 @@ int main() {
     char message[1024] = {0};
     char buffer[1024] = {0};
 
-    strcpy(message, request.c_str());
+    strcpy(message, request.c_str());// c_str() converts it to constant as second arg is needed to be a constant
 
     // Send the message with correct length (using strlen to get the string's length)
     send(clientSocket, message, strlen(message), 0);
